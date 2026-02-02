@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bespoke upcycled furniture in Lymm, Cheshire. Transforming preloved pieces into stunning, unique furniture with elegance and sustainability.">
+    <title>Ellie Taylor | Upcycled Furniture | Lymm, Cheshire</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <!-- Replace with actual logo -->
+                <img src="images/logo-placeholder.svg" alt="Ellie Taylor Furniture" class="logo-img">
+                <span class="logo-text">Ellie Taylor</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#featured" class="nav-link">Featured</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle animate-fade-up">Bespoke Upcycled Furniture</p>
+            <h1 class="hero-title animate-fade-up delay-1">Transforming the Forgotten<br>into the <span class="italic">Unforgettable</span></h1>
+            <p class="hero-description animate-fade-up delay-2">Handcrafted with love in Lymm, Cheshire</p>
+            <div class="hero-buttons animate-fade-up delay-3">
+                <a href="portfolio.html" class="btn btn-primary">View Portfolio</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="image-frame">
+                        <img src="images/about-placeholder.jpg" alt="Ellie Taylor at work">
+                    </div>
+                    <div class="experience-badge">
+                        <span class="years">10+</span>
+                        <span class="text">Years of<br>Passion</span>
+                    </div>
+                </div>
+                <div class="about-content reveal">
+                    <span class="section-tag">About</span>
+                    <h2 class="section-title">Breathing New Life into<br>Cherished Pieces</h2>
+                    <div class="decorative-line"></div>
+                    <p class="about-text">
+                        Welcome to my world of upcycled furniture. I'm Ellie, and I believe every piece of furniture has a story waiting to be told. Based in the beautiful village of Lymm, Cheshire, I specialise in transforming preloved furniture into stunning, bespoke pieces that blend timeless elegance with sustainable living.
+                    </p>
+                    <p class="about-text">
+                        Each creation is lovingly restored by hand, using premium paints and finishes to ensure lasting beauty. Whether you're looking for a statement piece for your home or wish to give new life to a treasured heirloom, I'm here to help you create something truly special.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>Sustainable</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-hand-sparkles"></i>
+                            <span>Handcrafted</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-gem"></i>
+                            <span>Bespoke</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Work Section -->
+    <section class="featured section" id="featured">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured Transformations</h2>
+                <p class="section-description">A glimpse into some of my favourite creations</p>
+                <div class="decorative-line center"></div>
+            </div>
+            <div class="featured-grid">
+                <div class="featured-item large reveal" data-category="dresser">
+                    <div class="featured-image">
+                        <img src="images/featured-1.jpg" alt="Victorian Dresser Transformation">
+                        <div class="featured-overlay">
+                            <span class="featured-category">Dresser</span>
+                            <h3 class="featured-title">Victorian Elegance</h3>
+                            <p class="featured-desc">A stunning Victorian dresser brought back to life with soft sage tones</p>
+                            <button class="btn-view" onclick="openLightbox('images/featured-1.jpg', 'Victorian Elegance', 'A stunning Victorian dresser brought back to life with soft sage tones and antique gold detailing.')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item reveal" data-category="table">
+                    <div class="featured-image">
+                        <img src="images/featured-2.jpg" alt="Farmhouse Dining Table">
+                        <div class="featured-overlay">
+                            <span class="featured-category">Table</span>
+                            <h3 class="featured-title">Farmhouse Revival</h3>
+                            <p class="featured-desc">Rustic farmhouse table with modern finish</p>
+                            <button class="btn-view" onclick="openLightbox('images/featured-2.jpg', 'Farmhouse Revival', 'A rustic farmhouse dining table restored with a contemporary twist, perfect for family gatherings.')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item reveal" data-category="cabinet">
+                    <div class="featured-image">
+                        <img src="images/featured-3.jpg" alt="Art Deco Cabinet">
+                        <div class="featured-overlay">
+                            <span class="featured-category">Cabinet</span>
+                            <h3 class="featured-title">Art Deco Dreams</h3>
+                            <p class="featured-desc">1920s cocktail cabinet with gold leaf accents</p>
+                            <button class="btn-view" onclick="openLightbox('images/featured-3.jpg', 'Art Deco Dreams', '1920s cocktail cabinet meticulously restored with gold leaf accents and luxurious finish.')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item reveal" data-category="chair">
+                    <div class="featured-image">
+                        <img src="images/featured-4.jpg" alt="French Provincial Chair">
+                        <div class="featured-overlay">
+                            <span class="featured-category">Chair</span>
+                            <h3 class="featured-title">French Provincial</h3>
+                            <p class="featured-desc">Elegant occasional chair in soft linen</p>
+                            <button class="btn-view" onclick="openLightbox('images/featured-4.jpg', 'French Provincial', 'An elegant French provincial occasional chair reupholstered in premium Belgian linen.')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta reveal">
+                <a href="portfolio.html" class="btn btn-primary">View Full Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Services</span>
+                <h2 class="section-title">What I Offer</h2>
+                <p class="section-description">From consultation to completion, a bespoke service tailored to you</p>
+                <div class="decorative-line center"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h3 class="service-title">Furniture Upcycling</h3>
+                    <p class="service-desc">Transform your tired furniture into stunning statement pieces with professional painting, finishing, and restoration.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="service-title">Colour Consultation</h3>
+                    <p class="service-desc">Not sure what colour to choose? I'll help you select the perfect palette to complement your home's aesthetic.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="service-title">Sourcing Service</h3>
+                    <p class="service-desc">Looking for that perfect piece? I can source quality vintage furniture and transform it to your specifications.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <h3 class="service-title">Ready to Buy</h3>
+                    <p class="service-desc">Browse my collection of finished pieces, ready to add character and charm to your home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial section">
+        <div class="testimonial-bg"></div>
+        <div class="container">
+            <div class="testimonial-content reveal">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <blockquote>
+                    "Ellie transformed my grandmother's old dressing table into the most beautiful piece. Her attention to detail is extraordinary, and she truly understood my vision. I couldn't be happier with the result."
+                </blockquote>
+                <div class="testimonial-author">
+                    <span class="author-name">Sarah Mitchell</span>
+                    <span class="author-location">Hale, Cheshire</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title">Let's Create<br>Something Beautiful</h2>
+                    <div class="decorative-line"></div>
+                    <p class="contact-text">
+                        Have a piece you'd like transformed or looking for something special? I'd love to hear from you. Get in touch to discuss your project.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Lymm, Cheshire</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:hello@ellietaylor.co.uk">hello@ellietaylor.co.uk</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <a href="tel:+441onal23456789">01onal 234 5678</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper reveal">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone (optional)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service">
+                                <option value="">Please select...</option>
+                                <option value="upcycling">Furniture Upcycling</option>
+                                <option value="consultation">Colour Consultation</option>
+                                <option value="sourcing">Sourcing Service</option>
+                                <option value="purchase">Purchase Ready Piece</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo-placeholder.svg" alt="Ellie Taylor Furniture" class="footer-logo">
+                    <p>Bespoke upcycled furniture, handcrafted with love in Lymm, Cheshire.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Along</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ellie Taylor Furniture. All rights reserved.</p>
+                <p class="credit">Crafted with <i class="fas fa-heart"></i> in Cheshire</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/441onal23456789?text=Hello%20Ellie,%20I'm%20interested%20in%20your%20furniture%20services." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close lightbox">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

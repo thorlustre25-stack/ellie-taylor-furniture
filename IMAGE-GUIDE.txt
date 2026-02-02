@@ -1,0 +1,133 @@
+===============================================
+ELLIE TAYLOR FURNITURE WEBSITE - IMAGE GUIDE
+===============================================
+
+This guide explains all the images needed for the website.
+Replace placeholder files in the /images folder with actual photos.
+
+-----------------------------------------------
+REQUIRED IMAGES
+-----------------------------------------------
+
+1. LOGO
+   Filename: logo-placeholder.png
+   Recommended: PNG with transparent background
+   Size: Around 200-300px wide
+   Notes: This will be used in the navbar and footer
+
+2. HERO BACKGROUND
+   Filename: hero-bg.jpg
+   Recommended size: 1920x1080px minimum (landscape)
+   Notes: Large, stunning photo of furniture or workshop
+          This is the main background on the home page
+          Should be high quality as it sets the tone
+
+3. ABOUT SECTION IMAGE
+   Filename: about-placeholder.jpg
+   Recommended size: 800x1000px (portrait orientation)
+   Notes: Photo of Ellie at work, or a beautiful finished piece
+          This appears next to the "About" text
+
+4. PORTFOLIO PAGE HEADER
+   Filename: portfolio-header.jpg
+   Recommended size: 1920x800px (landscape)
+   Notes: Background for the portfolio page header
+          Can be a workshop shot or furniture detail
+
+5. TESTIMONIAL BACKGROUND (optional)
+   Filename: testimonial-bg.jpg
+   Recommended size: 1920x800px
+   Notes: Subtle background texture or furniture photo
+          Will be displayed with low opacity
+
+6. CTA BACKGROUND
+   Filename: cta-bg.jpg
+   Recommended size: 1920x600px (landscape)
+   Notes: Background for the "Have a Piece in Mind?" section
+          on the portfolio page
+
+-----------------------------------------------
+FEATURED WORK IMAGES (Home Page)
+-----------------------------------------------
+
+These appear on the home page in the "Featured Transformations" section.
+
+Filename            | Recommended Size
+--------------------|------------------
+featured-1.jpg      | 800x800px (square) - Large feature
+featured-2.jpg      | 600x450px (landscape)
+featured-3.jpg      | 600x450px (landscape)
+featured-4.jpg      | 600x450px (landscape)
+
+-----------------------------------------------
+PORTFOLIO IMAGES (Portfolio Page)
+-----------------------------------------------
+
+These appear on the portfolio page gallery.
+All should be similar dimensions for a consistent grid.
+
+Filename            | Recommended Size
+--------------------|------------------
+portfolio-1.jpg     | 600x600px (square)
+portfolio-2.jpg     | 600x600px (square)
+portfolio-3.jpg     | 600x600px (square)
+portfolio-4.jpg     | 600x600px (square)
+portfolio-5.jpg     | 600x600px (square)
+portfolio-6.jpg     | 600x600px (square)
+portfolio-7.jpg     | 600x600px (square)
+portfolio-8.jpg     | 600x600px (square)
+portfolio-9.jpg     | 600x600px (square)
+portfolio-10.jpg    | 600x600px (square)
+portfolio-11.jpg    | 600x600px (square)
+portfolio-12.jpg    | 600x600px (square)
+
+-----------------------------------------------
+IMAGE TIPS
+-----------------------------------------------
+
+1. QUALITY: Use high-resolution photos (at least 300dpi for print)
+
+2. LIGHTING: Natural lighting works best for furniture photos
+
+3. COMPRESSION: Optimise images for web (use tools like TinyPNG)
+   - Hero images: Max 500KB
+   - Gallery images: Max 200KB each
+
+4. CONSISTENCY: Try to maintain consistent lighting and style
+   across all portfolio photos
+
+5. BEFORE/AFTER: Consider including before/after shots
+   (can be added as additional portfolio items)
+
+6. FORMAT:
+   - Use JPG for photographs
+   - Use PNG for logo (with transparency)
+   - Use WebP for additional compression (optional)
+
+-----------------------------------------------
+UPDATING THE WEBSITE
+-----------------------------------------------
+
+To update images:
+1. Name your new images exactly as shown above
+2. Replace the files in the /images folder
+3. Refresh the website to see changes
+
+To add more portfolio items:
+1. Add more images (portfolio-13.jpg, portfolio-14.jpg, etc.)
+2. Add corresponding HTML in portfolio.html following the existing pattern
+
+-----------------------------------------------
+COLOUR SCHEME REFERENCE
+-----------------------------------------------
+
+If you want to coordinate your photos with the website colours:
+
+- Soft Sage Green: #8B9A7B
+- Antique Gold: #C9A962
+- Warm Cream: #FAF8F5
+- Charcoal: #2D2D2D
+
+These colours can be changed in styles.css at the top (CSS Variables section).
+
+===============================================

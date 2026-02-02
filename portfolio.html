@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse the portfolio of beautifully upcycled furniture by Ellie Taylor. Dressers, tables, cabinets and more, all handcrafted in Lymm, Cheshire.">
+    <title>Portfolio | Ellie Taylor | Upcycled Furniture</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo-placeholder.svg" alt="Ellie Taylor Furniture" class="logo-img">
+                <span class="logo-text">Ellie Taylor</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#featured" class="nav-link">Featured</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1 class="page-title animate-fade-up">Portfolio</h1>
+            <p class="page-subtitle animate-fade-up delay-1">A collection of transformations</p>
+            <div class="breadcrumb animate-fade-up delay-2">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Portfolio</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-section section">
+        <div class="container">
+            <div class="portfolio-intro reveal">
+                <p>Each piece tells a story of transformation. Browse my collection of upcycled furniture, from elegant dressers to statement cabinets. Click on any image to see the full details.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="dresser">Dressers</button>
+                <button class="filter-btn" data-filter="table">Tables</button>
+                <button class="filter-btn" data-filter="cabinet">Cabinets</button>
+                <button class="filter-btn" data-filter="chair">Chairs</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <!-- Row 1 -->
+                <div class="portfolio-item reveal" data-category="dresser">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-1.jpg" alt="Sage Green Victorian Dresser">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Dresser</span>
+                            <h3 class="portfolio-title">Sage Green Victorian</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-1.jpg', 'Sage Green Victorian Dresser', 'This stunning Victorian dresser was transformed with our signature sage green paint, finished with antique brass handles and a protective wax coating. The intricate carved details were carefully highlighted with gold gilding.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="table">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-2.jpg" alt="Rustic Farmhouse Table">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Table</span>
+                            <h3 class="portfolio-title">Rustic Farmhouse</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-2.jpg', 'Rustic Farmhouse Dining Table', 'A beautiful oak farmhouse table restored to its former glory. The top was sanded back to reveal the natural wood grain, while the legs were painted in a soft cream with gentle distressing for character.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="cabinet">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-3.jpg" alt="Art Deco Cocktail Cabinet">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Cabinet</span>
+                            <h3 class="portfolio-title">Art Deco Cocktail</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-3.jpg', 'Art Deco Cocktail Cabinet', 'This 1920s cocktail cabinet was a labour of love. Finished in deep navy with gold leaf geometric patterns, the interior was lined with vintage-inspired paper and fitted with a mirrored back.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="portfolio-item reveal" data-category="chair">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-4.jpg" alt="French Provincial Armchair">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Chair</span>
+                            <h3 class="portfolio-title">French Provincial</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-4.jpg', 'French Provincial Armchair', 'An elegant Louis XV style armchair completely restored. The frame was painted in antique white with subtle gold detailing, and reupholstered in premium Belgian linen with down-filled cushioning.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="dresser">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-5.jpg" alt="Blush Pink Tallboy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Dresser</span>
+                            <h3 class="portfolio-title">Blush Pink Tallboy</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-5.jpg', 'Blush Pink Tallboy', 'This Edwardian tallboy was transformed with a soft blush pink finish. New crystal handles were added, and the interior drawers were lined with scented paper. Perfect for a bedroom or dressing room.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="table">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-6.jpg" alt="Console Table">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Table</span>
+                            <h3 class="portfolio-title">Elegant Console</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-6.jpg', 'Elegant Console Table', 'A Georgian console table refinished in charcoal grey with a marble-effect top created using specialist paint techniques. The ornate legs were highlighted with silver leaf.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="portfolio-item reveal" data-category="cabinet">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-7.jpg" alt="Welsh Dresser">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Cabinet</span>
+                            <h3 class="portfolio-title">Country Welsh Dresser</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-7.jpg', 'Country Welsh Dresser', 'A classic Welsh dresser given new life with a two-tone finish. The base in forest green and the top section in warm cream, with cup hooks added for displaying treasured china.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="other">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-8.jpg" alt="Vintage Mirror">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Mirror</span>
+                            <h3 class="portfolio-title">Ornate Gilt Mirror</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-8.jpg', 'Ornate Gilt Mirror', 'This large ornate mirror frame was carefully restored and re-gilded using traditional gold leaf techniques. The aged patina was preserved in places for authentic character.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="chair">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-9.jpg" alt="Velvet Dining Chairs">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Chair</span>
+                            <h3 class="portfolio-title">Velvet Dining Set</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-9.jpg', 'Velvet Dining Chair Set', 'A set of six Edwardian dining chairs restored and reupholstered in deep emerald velvet. The mahogany frames were polished to a rich shine, complementing the luxurious fabric.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 4 -->
+                <div class="portfolio-item reveal" data-category="dresser">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-10.jpg" alt="Bow Front Chest">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Dresser</span>
+                            <h3 class="portfolio-title">Bow Front Chest</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-10.jpg', 'Bow Front Chest of Drawers', 'An elegant bow-front chest of drawers finished in soft grey with the top restored to show the beautiful mahogany wood. New brass drop handles complete the classic look.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="table">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-11.jpg" alt="Nest of Tables">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Table</span>
+                            <h3 class="portfolio-title">Nest of Tables</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-11.jpg', 'Nest of Tables', 'A nest of three tables transformed with an ombre effect, graduating from pale grey to charcoal. The tops feature a decoupage botanical design sealed with high-quality varnish.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="other">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-12.jpg" alt="Blanket Box">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Storage</span>
+                            <h3 class="portfolio-title">Ottoman Blanket Box</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-12.jpg', 'Ottoman Blanket Box', 'A Victorian blanket box transformed into a beautiful ottoman. Painted in heritage blue with a padded top upholstered in ticking stripe fabric. Perfect for the end of a bed.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="portfolio-cta reveal">
+                <p class="portfolio-note">More pieces added regularly. Follow me on social media to see the latest transformations.</p>
+                <div class="social-links-inline">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <i class="fab fa-instagram"></i>
+                        <span>Follow on Instagram</span>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Follow on Facebook</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2>Have a Piece in Mind?</h2>
+                <p>Let's discuss your project and bring your vision to life</p>
+                <a href="index.html#contact" class="btn btn-primary btn-large">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo-placeholder.svg" alt="Ellie Taylor Furniture" class="footer-logo">
+                    <p>Bespoke upcycled furniture, handcrafted with love in Lymm, Cheshire.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Along</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ellie Taylor Furniture. All rights reserved.</p>
+                <p class="credit">Crafted with <i class="fas fa-heart"></i> in Cheshire</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/441onal23456789?text=Hello%20Ellie,%20I'm%20interested%20in%20your%20furniture%20services." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close lightbox">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1)" aria-label="Previous image">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-nav lightbox-next" onclick="navigateLightbox(1)" aria-label="Next image">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
