@@ -46,33 +46,113 @@
         </div>
     </header>
 
-    <!-- Portfolio Filter -->
+    <!-- Transformations Section -->
     <section class="portfolio-section section">
         <div class="container">
             <div class="portfolio-intro reveal">
-                <p>Each piece tells a story of transformation. Browse my collection of upcycled furniture, from elegant dressers to statement cabinets. Click on any image to see the full details.</p>
+                <p>Each piece tells a story of transformation. From forgotten and worn to stunning and unique &mdash; browse my collection of upcycled furniture, lovingly handcrafted in Lymm, Cheshire.</p>
+            </div>
+
+            <!-- Before & After Transformations -->
+            <div class="transformations-header reveal">
+                <span class="section-tag">Before &amp; After</span>
+                <h2 class="section-title">The Transformation</h2>
+                <p class="section-description">See the magic unfold &mdash; from preloved to statement piece</p>
+                <div class="decorative-line center"></div>
+            </div>
+
+            <div class="transformations-grid">
+                <!-- Transformation 1: Bedside Tables -->
+                <div class="transformation-card reveal">
+                    <div class="transformation-images">
+                        <div class="transformation-before">
+                            <span class="transformation-label before">Before</span>
+                            <img src="images/Furniture Photos/IMG_9409.JPEG" alt="Worn brown bedside tables before restoration">
+                        </div>
+                        <div class="transformation-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="transformation-after">
+                            <span class="transformation-label after">After</span>
+                            <img src="images/Furniture Photos/F4.jpeg" alt="Teal bedside tables after restoration">
+                        </div>
+                    </div>
+                    <div class="transformation-info">
+                        <h3>Teal Bedside Tables</h3>
+                        <p>A pair of tired, scratched bedside tables transformed with a rich teal finish and polished silver ring handles.</p>
+                    </div>
+                </div>
+
+                <!-- Transformation 2: Wall Unit -->
+                <div class="transformation-card reveal">
+                    <div class="transformation-images">
+                        <div class="transformation-before">
+                            <span class="transformation-label before">Before</span>
+                            <img src="images/Furniture Photos/IMG_3766.JPEG" alt="Old brown wall unit before restoration">
+                        </div>
+                        <div class="transformation-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="transformation-after">
+                            <span class="transformation-label after">After</span>
+                            <img src="images/Furniture Photos/IMG_3790.JPEG" alt="Green painted wall unit after restoration">
+                        </div>
+                    </div>
+                    <div class="transformation-info">
+                        <h3>Sage Green Wall Unit</h3>
+                        <p>A dated brown wall unit completely reimagined in a beautiful sage green with gold hardware, now a stylish kitchen dresser.</p>
+                    </div>
+                </div>
+
+                <!-- Transformation 3: Wardrobe -->
+                <div class="transformation-card reveal">
+                    <div class="transformation-images">
+                        <div class="transformation-before">
+                            <span class="transformation-label before">Before</span>
+                            <img src="images/Furniture Photos/image5.jpeg" alt="Old dark oak wardrobe before restoration">
+                        </div>
+                        <div class="transformation-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="transformation-after">
+                            <span class="transformation-label after">After</span>
+                            <img src="images/Furniture Photos/F2.jpeg" alt="Green and cream wardrobe after restoration">
+                        </div>
+                    </div>
+                    <div class="transformation-info">
+                        <h3>Sage &amp; Linen Wardrobe</h3>
+                        <p>A dark, heavy oak wardrobe given a completely new identity with forest green paint, linen fabric panel doors and natural wood trim.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Divider -->
+            <div class="gallery-divider reveal">
+                <span class="section-tag">Gallery</span>
+                <h2 class="section-title">Finished Pieces</h2>
+                <p class="section-description">A curated collection of completed transformations</p>
+                <div class="decorative-line center"></div>
             </div>
 
             <!-- Filter Buttons -->
             <div class="filter-buttons reveal">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="dresser">Dressers</button>
-                <button class="filter-btn" data-filter="table">Tables</button>
                 <button class="filter-btn" data-filter="cabinet">Cabinets</button>
+                <button class="filter-btn" data-filter="table">Tables &amp; Desks</button>
                 <button class="filter-btn" data-filter="chair">Chairs</button>
-                <button class="filter-btn" data-filter="other">Other</button>
             </div>
 
             <!-- Portfolio Grid -->
             <div class="portfolio-grid">
-                <!-- Row 1 -->
+                <!-- Dressers -->
                 <div class="portfolio-item reveal" data-category="dresser">
                     <div class="portfolio-image">
-                        <img src="images/portfolio-1.jpg" alt="Sage Green Victorian Dresser">
+                        <img src="images/Furniture Photos/F1.jpeg" alt="Tropical Toucan Chest of Drawers">
                         <div class="portfolio-overlay">
                             <span class="portfolio-category">Dresser</span>
-                            <h3 class="portfolio-title">Sage Green Victorian</h3>
-                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-1.jpg', 'Sage Green Victorian Dresser', 'This stunning Victorian dresser was transformed with our signature sage green paint, finished with antique brass handles and a protective wax coating. The intricate carved details were carefully highlighted with gold gilding.')">
+                            <h3 class="portfolio-title">Tropical Paradise</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/F1.jpeg', 'Tropical Paradise', 'A vibrant pink chest of drawers with stunning tropical toucan decoupage on queen anne legs. A true statement piece for any room.')">
                                 <i class="fas fa-expand"></i>
                                 <span>View Details</span>
                             </button>
@@ -80,13 +160,112 @@
                     </div>
                 </div>
 
-                <div class="portfolio-item reveal" data-category="table">
+                <div class="portfolio-item reveal" data-category="dresser">
                     <div class="portfolio-image">
-                        <img src="images/portfolio-2.jpg" alt="Rustic Farmhouse Table">
+                        <img src="images/Furniture Photos/IMG_4211.JPEG" alt="Grey and Yellow Chest of Drawers">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-category">Table</span>
-                            <h3 class="portfolio-title">Rustic Farmhouse</h3>
-                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-2.jpg', 'Rustic Farmhouse Dining Table', 'A beautiful oak farmhouse table restored to its former glory. The top was sanded back to reveal the natural wood grain, while the legs were painted in a soft cream with gentle distressing for character.')">
+                            <span class="portfolio-category">Dresser</span>
+                            <h3 class="portfolio-title">Charcoal &amp; Citrus</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/IMG_4211.JPEG', 'Charcoal & Citrus', 'A mid-century chest of drawers finished in dark charcoal with bold yellow trim detailing and decorative vintage knobs.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="dresser">
+                    <div class="portfolio-image">
+                        <img src="images/Furniture Photos/IMG_5702.JPEG" alt="Blue Chest with Starfish Handles">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Dresser</span>
+                            <h3 class="portfolio-title">Coastal Blue</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/IMG_5702.JPEG', 'Coastal Blue', 'A charming chest of drawers painted in soft coastal blue with a natural wood top and gold starfish handles for a seaside touch.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="dresser">
+                    <div class="portfolio-image">
+                        <img src="images/Furniture Photos/IMG_6204.JPEG" alt="Yellow Chest with Heart Handles">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Dresser</span>
+                            <h3 class="portfolio-title">Sunshine Hearts</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/IMG_6204.JPEG', 'Sunshine Hearts', 'An adorable chest of drawers in warm sunshine yellow with pink ceramic heart-shaped handles on delicate queen anne legs.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="dresser">
+                    <div class="portfolio-image">
+                        <img src="images/Furniture Photos/F3.jpeg" alt="Navy Mid-Century Sideboard">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Dresser</span>
+                            <h3 class="portfolio-title">Midnight Modern</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/F3.jpeg', 'Midnight Modern', 'A sleek mid-century sideboard refinished in deep navy with natural wood handles and tapered legs for a contemporary look.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="dresser">
+                    <div class="portfolio-image">
+                        <img src="images/Furniture Photos/IMG_0350.JPEG" alt="Geometric Painted Chest">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Dresser</span>
+                            <h3 class="portfolio-title">Geometric Blush</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/IMG_0350.JPEG', 'Geometric Blush', 'A bold oak chest of drawers with a striking geometric design in blush, plum and grey tones with natural wood handles.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="dresser">
+                    <div class="portfolio-image">
+                        <img src="images/Furniture Photos/IMG_4704.JPEG" alt="Teak Chest with Mint Handles">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Dresser</span>
+                            <h3 class="portfolio-title">Retro Mint</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/IMG_4704.JPEG', 'Retro Mint', 'A retro teak chest of drawers given a fresh pop of colour with mint green painted handles against the warm natural wood.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="dresser">
+                    <div class="portfolio-image">
+                        <img src="images/Furniture Photos/FullSizeRender.JPEG" alt="Green and Wood Mid-Century Chest">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Dresser</span>
+                            <h3 class="portfolio-title">Pistachio Pop</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/FullSizeRender.JPEG', 'Pistachio Pop', 'A mid-century chest of drawers with a fresh pistachio green frame and beautiful natural walnut wood drawer fronts.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cabinets & Wardrobes -->
+                <div class="portfolio-item reveal" data-category="cabinet">
+                    <div class="portfolio-image">
+                        <img src="images/Furniture Photos/F5.jpeg" alt="Grey and Mustard Display Cabinet">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Cabinet</span>
+                            <h3 class="portfolio-title">Retro Revival</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/F5.jpeg', 'Retro Revival', 'A mid-century display cabinet beautifully refinished in grey with bold mustard accents and glass front. Perfect as a drinks cabinet.')">
                                 <i class="fas fa-expand"></i>
                                 <span>View Details</span>
                             </button>
@@ -96,11 +275,11 @@
 
                 <div class="portfolio-item reveal" data-category="cabinet">
                     <div class="portfolio-image">
-                        <img src="images/portfolio-3.jpg" alt="Art Deco Cocktail Cabinet">
+                        <img src="images/Furniture Photos/IMG_8516.JPEG" alt="Black Glass Display Cabinet">
                         <div class="portfolio-overlay">
                             <span class="portfolio-category">Cabinet</span>
-                            <h3 class="portfolio-title">Art Deco Cocktail</h3>
-                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-3.jpg', 'Art Deco Cocktail Cabinet', 'This 1920s cocktail cabinet was a labour of love. Finished in deep navy with gold leaf geometric patterns, the interior was lined with vintage-inspired paper and fitted with a mirrored back.')">
+                            <h3 class="portfolio-title">Midnight Elegance</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/IMG_8516.JPEG', 'Midnight Elegance', 'A stunning glass-front display cabinet in deep black with silver bee-shaped handles on elegant Queen Anne legs.')">
                                 <i class="fas fa-expand"></i>
                                 <span>View Details</span>
                             </button>
@@ -108,57 +287,13 @@
                     </div>
                 </div>
 
-                <!-- Row 2 -->
-                <div class="portfolio-item reveal" data-category="chair">
-                    <div class="portfolio-image">
-                        <img src="images/portfolio-4.jpg" alt="French Provincial Armchair">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-category">Chair</span>
-                            <h3 class="portfolio-title">French Provincial</h3>
-                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-4.jpg', 'French Provincial Armchair', 'An elegant Louis XV style armchair completely restored. The frame was painted in antique white with subtle gold detailing, and reupholstered in premium Belgian linen with down-filled cushioning.')">
-                                <i class="fas fa-expand"></i>
-                                <span>View Details</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item reveal" data-category="dresser">
-                    <div class="portfolio-image">
-                        <img src="images/portfolio-5.jpg" alt="Blush Pink Tallboy">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-category">Dresser</span>
-                            <h3 class="portfolio-title">Blush Pink Tallboy</h3>
-                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-5.jpg', 'Blush Pink Tallboy', 'This Edwardian tallboy was transformed with a soft blush pink finish. New crystal handles were added, and the interior drawers were lined with scented paper. Perfect for a bedroom or dressing room.')">
-                                <i class="fas fa-expand"></i>
-                                <span>View Details</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item reveal" data-category="table">
-                    <div class="portfolio-image">
-                        <img src="images/portfolio-6.jpg" alt="Console Table">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-category">Table</span>
-                            <h3 class="portfolio-title">Elegant Console</h3>
-                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-6.jpg', 'Elegant Console Table', 'A Georgian console table refinished in charcoal grey with a marble-effect top created using specialist paint techniques. The ornate legs were highlighted with silver leaf.')">
-                                <i class="fas fa-expand"></i>
-                                <span>View Details</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Row 3 -->
                 <div class="portfolio-item reveal" data-category="cabinet">
                     <div class="portfolio-image">
-                        <img src="images/portfolio-7.jpg" alt="Welsh Dresser">
+                        <img src="images/Furniture Photos/IMG_7997.JPEG" alt="Emerald Green Wardrobe">
                         <div class="portfolio-overlay">
                             <span class="portfolio-category">Cabinet</span>
-                            <h3 class="portfolio-title">Country Welsh Dresser</h3>
-                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-7.jpg', 'Country Welsh Dresser', 'A classic Welsh dresser given new life with a two-tone finish. The base in forest green and the top section in warm cream, with cup hooks added for displaying treasured china.')">
+                            <h3 class="portfolio-title">Emerald Statement</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/IMG_7997.JPEG', 'Emerald Statement', 'A vintage wardrobe and dresser combination painted in rich emerald green with ornate brass handles and original mirror.')">
                                 <i class="fas fa-expand"></i>
                                 <span>View Details</span>
                             </button>
@@ -166,13 +301,13 @@
                     </div>
                 </div>
 
-                <div class="portfolio-item reveal" data-category="other">
+                <div class="portfolio-item reveal" data-category="cabinet">
                     <div class="portfolio-image">
-                        <img src="images/portfolio-8.jpg" alt="Vintage Mirror">
+                        <img src="images/Furniture Photos/IMG_4545.JPEG" alt="Charcoal Built-in Wardrobe">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-category">Mirror</span>
-                            <h3 class="portfolio-title">Ornate Gilt Mirror</h3>
-                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-8.jpg', 'Ornate Gilt Mirror', 'This large ornate mirror frame was carefully restored and re-gilded using traditional gold leaf techniques. The aged patina was preserved in places for authentic character.')">
+                            <span class="portfolio-category">Cabinet</span>
+                            <h3 class="portfolio-title">Charcoal Wardrobe</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/IMG_4545.JPEG', 'Charcoal Wardrobe', 'A built-in wardrobe transformed with a sophisticated dark charcoal finish, gold knobs and integrated open shelving.')">
                                 <i class="fas fa-expand"></i>
                                 <span>View Details</span>
                             </button>
@@ -180,13 +315,13 @@
                     </div>
                 </div>
 
-                <div class="portfolio-item reveal" data-category="chair">
+                <div class="portfolio-item reveal" data-category="cabinet">
                     <div class="portfolio-image">
-                        <img src="images/portfolio-9.jpg" alt="Velvet Dining Chairs">
+                        <img src="images/Furniture Photos/IMG_0351.JPEG" alt="Geometric Painted Wardrobe">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-category">Chair</span>
-                            <h3 class="portfolio-title">Velvet Dining Set</h3>
-                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-9.jpg', 'Velvet Dining Chair Set', 'A set of six Edwardian dining chairs restored and reupholstered in deep emerald velvet. The mahogany frames were polished to a rich shine, complementing the luxurious fabric.')">
+                            <span class="portfolio-category">Cabinet</span>
+                            <h3 class="portfolio-title">Geometric Oak</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/IMG_0351.JPEG', 'Geometric Oak', 'A striking oak wardrobe with a bold geometric painted design in blush, plum and grey — part of a matching bedroom set.')">
                                 <i class="fas fa-expand"></i>
                                 <span>View Details</span>
                             </button>
@@ -194,14 +329,14 @@
                     </div>
                 </div>
 
-                <!-- Row 4 -->
-                <div class="portfolio-item reveal" data-category="dresser">
+                <!-- Tables & Desks -->
+                <div class="portfolio-item reveal" data-category="table">
                     <div class="portfolio-image">
-                        <img src="images/portfolio-10.jpg" alt="Bow Front Chest">
+                        <img src="images/Furniture Photos/IMG_9087.JPEG" alt="Navy and Wood Nesting Tables">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-category">Dresser</span>
-                            <h3 class="portfolio-title">Bow Front Chest</h3>
-                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-10.jpg', 'Bow Front Chest of Drawers', 'An elegant bow-front chest of drawers finished in soft grey with the top restored to show the beautiful mahogany wood. New brass drop handles complete the classic look.')">
+                            <span class="portfolio-category">Table</span>
+                            <h3 class="portfolio-title">Navy Nest</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/IMG_9087.JPEG', 'Navy Nest', 'A set of nesting tables with dark navy painted turned legs and beautifully sanded natural wood tops.')">
                                 <i class="fas fa-expand"></i>
                                 <span>View Details</span>
                             </button>
@@ -211,11 +346,11 @@
 
                 <div class="portfolio-item reveal" data-category="table">
                     <div class="portfolio-image">
-                        <img src="images/portfolio-11.jpg" alt="Nest of Tables">
+                        <img src="images/Furniture Photos/IMG_1080.JPEG" alt="Emerald Green Desk">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-category">Table</span>
-                            <h3 class="portfolio-title">Nest of Tables</h3>
-                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-11.jpg', 'Nest of Tables', 'A nest of three tables transformed with an ombre effect, graduating from pale grey to charcoal. The tops feature a decoupage botanical design sealed with high-quality varnish.')">
+                            <span class="portfolio-category">Desk</span>
+                            <h3 class="portfolio-title">Emerald Study</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/IMG_1080.JPEG', 'Emerald Study', 'A compact writing desk painted in bold emerald green with polished silver hardware and castors for easy movement.')">
                                 <i class="fas fa-expand"></i>
                                 <span>View Details</span>
                             </button>
@@ -223,13 +358,127 @@
                     </div>
                 </div>
 
-                <div class="portfolio-item reveal" data-category="other">
+                <div class="portfolio-item reveal" data-category="table">
                     <div class="portfolio-image">
-                        <img src="images/portfolio-12.jpg" alt="Blanket Box">
+                        <img src="images/Furniture Photos/IMG_8211.JPEG" alt="Mint Green Desk">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-category">Storage</span>
-                            <h3 class="portfolio-title">Ottoman Blanket Box</h3>
-                            <button class="btn-view-portfolio" onclick="openLightbox('images/portfolio-12.jpg', 'Ottoman Blanket Box', 'A Victorian blanket box transformed into a beautiful ottoman. Painted in heritage blue with a padded top upholstered in ticking stripe fabric. Perfect for the end of a bed.')">
+                            <span class="portfolio-category">Desk</span>
+                            <h3 class="portfolio-title">Mint &amp; Oak</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/IMG_8211.JPEG', 'Mint & Oak', 'A vintage desk beautifully restored with a mint green body and sanded natural oak top and drawer fronts.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="table">
+                    <div class="portfolio-image">
+                        <img src="images/Furniture Photos/IMG_9157.JPEG" alt="Grey Dressing Table">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Table</span>
+                            <h3 class="portfolio-title">Dove Grey Dressing Table</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/IMG_9157.JPEG', 'Dove Grey Dressing Table', 'An elegant dressing table refinished in soft dove grey with gold hexagonal knobs, styled and ready for a bedroom.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="table">
+                    <div class="portfolio-image">
+                        <img src="images/Furniture Photos/IMG_8124.JPEG" alt="White Farmhouse Sideboard">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Table</span>
+                            <h3 class="portfolio-title">Farmhouse Sideboard</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/IMG_8124.JPEG', 'Farmhouse Sideboard', 'A large pine sideboard painted in crisp white with a sanded natural wood top and decorative silver knobs.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="table">
+                    <div class="portfolio-image">
+                        <img src="images/Furniture Photos/IMG_9502.JPEG" alt="Black Desk with Brass Knobs">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Desk</span>
+                            <h3 class="portfolio-title">Noir Study Desk</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/IMG_9502.JPEG', 'Noir Study Desk', 'A substantial vintage desk refinished in matte black with gold brass knobs, creating a sophisticated workspace.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="table">
+                    <div class="portfolio-image">
+                        <img src="images/Furniture Photos/IMG_4697.JPEG" alt="Teal Leopard Print Coffee Table">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Table</span>
+                            <h3 class="portfolio-title">Teal Leopard</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/IMG_4697.JPEG', 'Teal Leopard', 'A bold coffee table in vibrant teal with a hand-painted gold leopard print top sealed under resin for durability.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chairs -->
+                <div class="portfolio-item reveal" data-category="chair">
+                    <div class="portfolio-image">
+                        <img src="images/Furniture Photos/IMG_9465.jpeg" alt="Farmhouse Armchairs">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Chair</span>
+                            <h3 class="portfolio-title">Farmhouse Armchairs</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/IMG_9465.jpeg', 'Farmhouse Armchairs', 'A pair of traditional spindle-back farmhouse armchairs with pink painted legs, natural wood backs and navy velvet upholstered seats with brass stud detailing.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bedside Tables -->
+                <div class="portfolio-item reveal" data-category="dresser">
+                    <div class="portfolio-image">
+                        <img src="images/Furniture Photos/IMG_2231.JPEG" alt="Blue Bedside Cabinets">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Bedside</span>
+                            <h3 class="portfolio-title">Bluebell Bedside Pair</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/IMG_2231.JPEG', 'Bluebell Bedside Pair', 'A pair of classic bedside cabinets painted in a beautiful bluebell shade with decorative floral ceramic knobs.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="dresser">
+                    <div class="portfolio-image">
+                        <img src="images/Furniture Photos/IMG_5580.JPEG" alt="White Bedside Table">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Bedside</span>
+                            <h3 class="portfolio-title">Vintage White</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/IMG_5580.JPEG', 'Vintage White', 'A delicate Queen Anne style bedside table in soft white with a gold knob and decorative art deco patterned interior.')">
+                                <i class="fas fa-expand"></i>
+                                <span>View Details</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal" data-category="dresser">
+                    <div class="portfolio-image">
+                        <img src="images/Furniture Photos/IMG_3121.JPEG" alt="Pink Bedside Cabinet">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Bedside</span>
+                            <h3 class="portfolio-title">Blush Pine</h3>
+                            <button class="btn-view-portfolio" onclick="openLightbox('images/Furniture Photos/IMG_3121.JPEG', 'Blush Pine', 'A rustic pine bedside cabinet painted in soft blush pink with a natural wood top and crystal glass knobs.')">
                                 <i class="fas fa-expand"></i>
                                 <span>View Details</span>
                             </button>
