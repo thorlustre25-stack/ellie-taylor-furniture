@@ -360,40 +360,27 @@ function initContactForm() {
         submitBtn.innerHTML = '<span>Sending...</span><i class="fas fa-spinner fa-spin"></i>';
         submitBtn.disabled = true;
 
-        // Simulate form submission (replace with actual form handling)
-        setTimeout(() => {
-            // Success message
-            showFormMessage('Thank you for your message! I\'ll get back to you soon.', 'success');
-            contactForm.reset();
+        // Submit to Formspree
+        fetch('https://formspree.io/f/mwvnvnyq', {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        })
+        .then(response => {
+            if (response.ok) {
+                showFormMessage('Thank you for your message! I\'ll get back to you soon.', 'success');
+                contactForm.reset();
+            } else {
+                showFormMessage('Oops! Something went wrong. Please try again.', 'error');
+            }
+        })
+        .catch(error => {
+            showFormMessage('Oops! Something went wrong. Please try again.', 'error');
+        })
+        .finally(() => {
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
-        }, 1500);
-
-        // For actual implementation, you would:
-        // 1. Use a form service like Formspree, Netlify Forms, or EmailJS
-        // 2. Or set up a backend endpoint to handle the form
-
-        // Example with Formspree:
-        // fetch('https://formspree.io/f/YOUR_FORM_ID', {
-        //     method: 'POST',
-        //     body: formData,
-        //     headers: { 'Accept': 'application/json' }
-        // })
-        // .then(response => {
-        //     if (response.ok) {
-        //         showFormMessage('Thank you! I\'ll get back to you soon.', 'success');
-        //         contactForm.reset();
-        //     } else {
-        //         showFormMessage('Oops! Something went wrong.', 'error');
-        //     }
-        // })
-        // .catch(error => {
-        //     showFormMessage('Oops! Something went wrong.', 'error');
-        // })
-        // .finally(() => {
-        //     submitBtn.innerHTML = originalText;
-        //     submitBtn.disabled = false;
-        // });
+        });
     });
 }
 
