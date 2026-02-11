@@ -254,9 +254,15 @@ h4 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 }
 
 .logo-img {
-    height: 55px;
+    height: 45px;
     width: auto;
     border-radius: 4px;
+    opacity: 0;
+    transition: var(--transition-normal);
+}
+
+.navbar.scrolled .logo-img {
+    opacity: 1;
 }
 
 .logo-text {
@@ -416,6 +422,14 @@ h4 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
     text-align: center;
     padding: var(--spacing-md);
     max-width: 900px;
+}
+
+.hero-logo {
+    max-width: 450px;
+    width: 80%;
+    height: auto;
+    margin-bottom: var(--spacing-md);
+    border-radius: 8px;
 }
 
 .hero-subtitle {
