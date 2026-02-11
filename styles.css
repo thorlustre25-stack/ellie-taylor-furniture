@@ -254,15 +254,9 @@ h4 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 }
 
 .logo-img {
-    height: 45px;
+    height: 50px;
     width: auto;
     border-radius: 4px;
-    opacity: 0;
-    transition: var(--transition-normal);
-}
-
-.navbar.scrolled .logo-img {
-    opacity: 1;
 }
 
 .logo-text {
