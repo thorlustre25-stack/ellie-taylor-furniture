@@ -7,14 +7,14 @@
    CSS VARIABLES
    ======================================== */
 :root {
-    /* Colors - Easy to change later */
-    --color-primary: #8B9A7B;          /* Soft Sage Green */
-    --color-primary-dark: #6B7A5B;     /* Darker Sage */
-    --color-primary-light: #A8B89A;    /* Lighter Sage */
-    --color-accent: #C9A962;           /* Antique Gold */
-    --color-accent-dark: #A8893F;      /* Darker Gold */
-    --color-background: #FAF8F5;       /* Warm Cream */
-    --color-background-alt: #F5F2ED;   /* Slightly darker cream */
+    /* Colors - Matched to brand logo */
+    --color-primary: #2E7D96;          /* Teal Blue */
+    --color-primary-dark: #1E5F73;     /* Darker Teal */
+    --color-primary-light: #4A9DB5;    /* Lighter Teal */
+    --color-accent: #E8A848;           /* Warm Gold */
+    --color-accent-dark: #C88A2E;      /* Darker Gold */
+    --color-background: #E8EFF2;       /* Light Blue-Grey */
+    --color-background-alt: #DCE8EC;   /* Slightly darker blue-grey */
     --color-text: #2D2D2D;             /* Charcoal */
     --color-text-light: #6B6B6B;       /* Warm Grey */
     --color-text-lighter: #999999;     /* Light Grey */
@@ -23,7 +23,7 @@
     --color-overlay: rgba(26, 26, 26, 0.6);
 
     /* Typography */
-    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-heading: 'Fredoka', 'Quicksand', sans-serif;
     --font-body: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
 
     /* Spacing */
@@ -254,8 +254,9 @@ h4 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 }
 
 .logo-img {
-    height: 50px;
+    height: 55px;
     width: auto;
+    border-radius: 4px;
 }
 
 .logo-text {
