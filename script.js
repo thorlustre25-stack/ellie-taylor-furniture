@@ -161,6 +161,26 @@ function initLightbox() {
         }
     });
 
+    // Touch swipe support for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    lightbox.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    lightbox.addEventListener('touchend', function(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        const diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > 50) {
+            if (diff > 0) {
+                navigateLightbox(1);  // Swipe left = next
+            } else {
+                navigateLightbox(-1); // Swipe right = previous
+            }
+        }
+    }, { passive: true });
+
     // Collect all portfolio images for navigation
     collectLightboxImages();
 
