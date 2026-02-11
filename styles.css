@@ -1644,7 +1644,7 @@ h4 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 .lightbox-info {
     text-align: center;
     color: var(--color-text);
-    padding: var(--spacing-md);
+    padding: var(--spacing-lg) var(--spacing-md);
 }
 
 .lightbox-info h3 {
