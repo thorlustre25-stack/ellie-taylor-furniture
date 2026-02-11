@@ -425,11 +425,11 @@ h4 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 }
 
 .hero-logo {
-    max-width: 450px;
-    width: 80%;
+    max-width: 650px;
+    width: 90%;
     height: auto;
-    margin-bottom: var(--spacing-md);
-    border-radius: 8px;
+    margin-bottom: var(--spacing-lg);
+    border-radius: 12px;
 }
 
 .hero-subtitle {
