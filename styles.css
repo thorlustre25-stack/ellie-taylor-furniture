@@ -1636,7 +1636,7 @@ h4 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 
 .lightbox-content img {
     width: 100%;
-    max-height: 65vh;
+    max-height: 55vh;
     object-fit: contain;
     background-color: #f5f5f5;
 }
