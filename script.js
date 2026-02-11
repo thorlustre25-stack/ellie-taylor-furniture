@@ -163,6 +163,25 @@ function initLightbox() {
 
     // Collect all portfolio images for navigation
     collectLightboxImages();
+
+    // Make entire portfolio image clickable
+    document.querySelectorAll('.portfolio-item').forEach(item => {
+        const imageContainer = item.querySelector('.portfolio-image');
+        if (imageContainer) {
+            imageContainer.addEventListener('click', function() {
+                const btn = item.querySelector('.btn-view-portfolio');
+                if (btn) btn.click();
+            });
+        }
+    });
+
+    // Make transformation before/after images clickable
+    document.querySelectorAll('.transformation-before img, .transformation-after img').forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', function() {
+            openLightbox(this.src, this.alt, '');
+        });
+    });
 }
 
 function collectLightboxImages() {

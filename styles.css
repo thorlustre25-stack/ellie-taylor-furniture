@@ -1286,6 +1286,7 @@ h4 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
     position: relative;
     height: 350px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .portfolio-image img {
